@@ -18,4 +18,5 @@ RUN pip install --no-cache-dir -r requirements.txt --upgrade
 ENV SQL_DIALECT=sqlite
 
 VOLUME ["/opt/rtb/files"]
+RUN python3 /opt/rtb/rootthebox.py --setup=save
 ENTRYPOINT ["python3", "/opt/rtb/rootthebox.py", "--setup=docker"]
