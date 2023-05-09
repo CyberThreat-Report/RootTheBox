@@ -1,6 +1,6 @@
 FROM python:3.8
 
-ADD [ "https://dev.mysql.com/get/mysql-apt-config_0.8.16-1_all.deb", "/" ]
+ADD [ "https://repo.mysql.com/apt/ubuntu/pool/mysql-apt-config/m/mysql-apt-config/mysql-apt-config_0.8.9-1_all.deb", "/" ]
 
 RUN apt-get -qq update \
 	&& export DEBIAN_FRONTEND=noninteractive \
